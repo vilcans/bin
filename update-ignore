@@ -1,0 +1,3 @@
+#!/bin/bash
+# Makes git ignore the same files as Subversion
+git svn show-ignore >.git/info/exclude
