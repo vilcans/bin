@@ -16,4 +16,4 @@ find "$DIR" -type f \
     -not -name '*~' \
     -not -path '*/.git/*' \
     -not -name '*.pyc' \
-    -print0 | xargs -0 grep --with-filename --color=auto "$SEARCH"
+    -print0 | xargs -0 grep -n --with-filename --color=auto "$SEARCH"
