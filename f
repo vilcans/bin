@@ -16,4 +16,7 @@ find "$DIR" -type f \
     -not -name '*~' \
     -not -path '*/.git/*' \
     -not -name '*.pyc' \
+    -not -name '*.class' \
+    -not -path '*/gwt-unitCache/*' \
+    -not -name '*.symbolMap' \
     -print0 | xargs -0 grep -n --with-filename --color=auto "$SEARCH"
