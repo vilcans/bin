@@ -19,4 +19,5 @@ find "$DIR" -type f \
     -not -name '*.class' \
     -not -path '*/gwt-unitCache/*' \
     -not -name '*.symbolMap' \
+    -not -name '*.cache.html' \
     -print0 | xargs -0 grep -n --with-filename --color=auto "$SEARCH"
